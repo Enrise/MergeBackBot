@@ -1,5 +1,7 @@
 module.exports = {
-    '**/*.{ts,tsx}': [
-        () => 'node_modules/.bin/tsc --noEmit --pretty',
+    '*.ts': [
+        () => 'tsc --noEmit --pretty',
+        'eslint --color --fix'
     ],
+    '*.json': ['prettier --write'],
 };

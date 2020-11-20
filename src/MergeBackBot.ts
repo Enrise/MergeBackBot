@@ -7,19 +7,12 @@ class MergeBackBot {
 
     run() {
         // Setup git settings
-
         // Get all open branches
-
         // For each branch (except "the master")
-
         // ---- Pull latest changes from "the master"
-
         // ---- Push new commits to the branch
-
         // ---- if push failed:
-
         // ---- ---- if GitLab credentials configured:
-
         // ---- ---- ---- Post comment to GitLab with the most likely cause
     }
 }
