@@ -1,6 +1,6 @@
-import MergeBackBot from './MergeBackBot';
-
 import dotenv from 'dotenv';
+
+import MergeBackBot from './MergeBackBot';
 
 dotenv.config();
 
