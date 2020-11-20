@@ -1,13 +1,11 @@
 class MergeBackBot {
     constructor() {
-        console.log('================================');
-        console.log('Merge Back Bot     by enrise.com');
-        console.log('================================');
+        console.log('============================================');
+        console.log('Merge Back Bot by enrise.com');
+        console.log('============================================');
     }
 
     run() {
-        // Pretty script output
-
         // Setup git settings
 
         // Get all open branches

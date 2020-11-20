@@ -10,9 +10,8 @@
         }
     },
     "scripts": {
-        "start": "node dist/index.js",
-        "watch": "tsc --watch",
-        "test": "tsc --pretty"
+        "start": "ts-node src/index.ts",
+        "test": "tsc --noEmit --pretty"
     },
     "dependencies": {
         "dotenv": "^8.2.0"
@@ -21,6 +20,7 @@
         "@types/node": "^14.14.9",
         "husky": "^4.3.0",
         "lint-staged": "^10.5.1",
+        "ts-node": "^9.0.0",
         "typescript": "^4.1.2"
     }
 }
