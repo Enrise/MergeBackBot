@@ -9,12 +9,9 @@
             "pre-commit": "lint-staged"
         }
     },
-    "lint-staged": {
-        "*.ts": "tsc"
-    },
     "scripts": {
         "start": "node src/index.ts",
-        "test": "tsc"
+        "test": "tsc --noEmit --pretty"
     },
     "dependencies": {
         "dotenv": "^8.2.0"

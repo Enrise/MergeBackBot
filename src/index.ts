@@ -1,3 +1,3 @@
 require('dotenv').config();
 
-console.log(`hoi ${process.env.TEST}`);
+console.log(`hoi ${process.env.TEST}!`);
