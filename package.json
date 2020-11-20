@@ -1,7 +1,7 @@
 {
     "name": "@enrise/merge-back-bot",
     "version": "1.0.0",
-    "main": "src/index.ts",
+    "main": "dist/index.js",
     "license": "MIT",
     "private": false,
     "husky": {
@@ -10,8 +10,9 @@
         }
     },
     "scripts": {
-        "start": "node src/index.ts",
-        "test": "tsc --noEmit --pretty"
+        "start": "node dist/index.js",
+        "watch": "tsc --watch",
+        "test": "tsc --pretty"
     },
     "dependencies": {
         "dotenv": "^8.2.0"

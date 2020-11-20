@@ -1,3 +1,5 @@
+import MergeBackBot from './MergeBackBot';
+
 require('dotenv').config();
 
-console.log(`hoi ${process.env.TEST}!`);
+MergeBackBot.run();
