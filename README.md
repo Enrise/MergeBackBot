@@ -12,13 +12,13 @@ You need to run the `enrise/merge-back-bot:latest` container. Configuration is d
 
 ## Environment variables
 
-| Environment variable  | Default value    | Example value                                                             |
-| --------------------- | ---------------- | ------------------------------------------------------------------------- |
-| `MBB_GIT_REPO`        | -                | `git@github.com:my-user/my-project.git`                                   |
-| `MBB_GIT_BRANCH`      | `master`         | `main`                                                                    |
-| `MBB_GIT_NAME`        | `Merge Back Bot` | `MyBot`                                                                   |
-| `MBB_GIT_EMAIL`       | -                | `my-git-email@my-email.com`                                               |
-| `MBB_GIT_PRIVATE_KEY` | -                | [private key example](http://phpseclib.sourceforge.net/rsa/examples.html) |
+| Environment variable  | Default value    | Example value                                 |
+| --------------------- | ---------------- | --------------------------------------------- |
+| `MBB_GIT_REPO`        | -                | `git@github.com:my-user/my-project.git`       |
+| `MBB_GIT_BRANCH`      | `master`         | `main`                                        |
+| `MBB_GIT_NAME`        | `Merge Back Bot` | `MyBot`                                       |
+| `MBB_GIT_EMAIL`       | -                | `my-git-email@my-email.com`                   |
+| `MBB_GIT_PRIVATE_KEY` | -                | [private key example](https://bit.ly/2Va0yGy) |
 
 ## .gitlab-ci.yml example
 
@@ -30,7 +30,7 @@ stages:
     - merge back # End with a merge-back
 ```
 
-and the following job in that stage:
+And the following job in that stage:
 
 ```yml
 # ======================
@@ -55,11 +55,11 @@ environment variables.
 
 Post a summary of branches merged back by the bot. Failed branches will be highlighted.
 
-| Environment variable | Default value | Example value   |
-| -------------------- | ------------- | --------------- |
-| `MBB_SLACK_ENABLED`  | `false`       | `true`          |
-| `MBB_SLACK_WEBHOOK`  | -             | `"https://..."` |
-| `MBB_SLACK_CHANNEL`  | -             | `"#my-project"` |
+| Environment variable | Default value | Example value                                    |
+| -------------------- | ------------- | ------------------------------------------------ |
+| `MBB_SLACK_ENABLED`  | `false`       | `true`                                           |
+| `MBB_SLACK_WEBHOOK`  | -             | `"https://hooks.slack.com/services/xxx/xxx/xxx"` |
+| `MBB_SLACK_CHANNEL`  | -             | `"#my-project"`                                  |
 
 ## GitLab MR comments (not working yet)
 
