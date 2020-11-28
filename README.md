@@ -12,13 +12,13 @@ You need to run the `enrise/merge-back-bot:latest` container. Configuration is d
 
 ## Environment variables
 
-| Environment variable  | Default value    | Example value                                 |
-| --------------------- | ---------------- | --------------------------------------------- |
-| `MBB_GIT_REPO`        | -                | `git@github.com:my-user/my-project.git`       |
-| `MBB_GIT_BRANCH`      | `master`         | `main`                                        |
-| `MBB_GIT_NAME`        | `Merge Back Bot` | `MyBot`                                       |
-| `MBB_GIT_EMAIL`       | -                | `my-git-email@my-email.com`                   |
-| `MBB_GIT_PRIVATE_KEY` | -                | [private key example](https://bit.ly/2Va0yGy) |
+| Environment variable  | Default value      | Example value                                 |
+| --------------------- | ------------------ | --------------------------------------------- |
+| `MBB_GIT_REPO`        | -                  | `"git@github.com:my-user/my-project.git"`     |
+| `MBB_GIT_BRANCH`      | `"master"`         | `"main"`                                      |
+| `MBB_GIT_NAME`        | `"Merge Back Bot"` | `"MyBot"`                                     |
+| `MBB_GIT_EMAIL`       | -                  | `"my-git-email@my-email.com"`                 |
+| `MBB_GIT_PRIVATE_KEY` | -                  | [private key example](https://bit.ly/2Va0yGy) |
 
 ## .gitlab-ci.yml example
 
@@ -57,7 +57,7 @@ Post a summary of branches merged back by the bot. Failed branches will be highl
 
 | Environment variable | Default value | Example value                                    |
 | -------------------- | ------------- | ------------------------------------------------ |
-| `MBB_SLACK_ENABLED`  | `false`       | `true`                                           |
+| `MBB_SLACK_ENABLED`  | `"false"`     | `"true"`                                         |
 | `MBB_SLACK_WEBHOOK`  | -             | `"https://hooks.slack.com/services/xxx/xxx/xxx"` |
 | `MBB_SLACK_CHANNEL`  | -             | `"#my-project"`                                  |
 
@@ -67,8 +67,8 @@ Leaves a comment on your MR when the merge back has failed. This could happen wh
 
 | Environment variable    | Default value | Example value                     |
 | ----------------------- | ------------- | --------------------------------- |
-| `MBB_GITLAB_ENABLED`    | `false`       | `true`                            |
+| `MBB_GITLAB_ENABLED`    | `"false"`     | `"true"`                          |
 | `MBB_GITLAB_API_URL`    | -             | `"https://gitlab.com/api/v4/"`    |
-| `MBB_GITLAB_PROJECT_ID` | -             | `123`                             |
+| `MBB_GITLAB_PROJECT_ID` | -             | `"123"`                           |
 | `MBB_GITLAB_USERNAME`   | -             | `"my-username"`                   |
 | `MBB_GITLAB_PASSWORD`   | -             | `"my-password"` (or access token) |

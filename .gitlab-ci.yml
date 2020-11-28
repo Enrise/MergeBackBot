@@ -35,20 +35,20 @@ update branches:
     stage: merge back
     variables:
         # === primary configuration ========================================
-        MBB_GIT_REPO: git@gitlab.enrise.com:Enrise/MergeBackBot.git
-        MBB_GIT_BRANCH: master
-        MBB_GIT_NAME: Merge Back Bot
+        MBB_GIT_REPO: "git@gitlab.enrise.com:Enrise/MergeBackBot.git"
+        MBB_GIT_BRANCH: "master"
+        MBB_GIT_NAME: "Merge Back Bot"
         # MBB_GIT_EMAIL: via gitlab CI/CD variables
         # MBB_GIT_PRIVATE_KEY: via gitlab CI/CD variables
         # === slack plugin =================================================
-        MBB_SLACK_ENABLED: true
+        MBB_SLACK_ENABLED: "true"
         # MBB_SLACK_WEBHOOK: via gitlab CI/CD variables
-        MBB_SLACK_CHANNEL: merge-back-bot
+        MBB_SLACK_CHANNEL: "merge-back-bot"
         # === gitlab plugin ================================================
-        MBB_GITLAB_ENABLED: true
-        MBB_GITLAB_API_URL: https://gitlab.enrise.com/api/v4/
-        MBB_GITLAB_PROJECT_ID: 877
-        MBB_GITLAB_USERNAME: EnriseBot
+        MBB_GITLAB_ENABLED: "true"
+        MBB_GITLAB_API_URL: "https://gitlab.enrise.com/api/v4/"
+        MBB_GITLAB_PROJECT_ID: "877"
+        MBB_GITLAB_USERNAME: "EnriseBot"
         # MBB_GITLAB_PASSWORD: via gitlab CI/CD variables
     only:
         - master
