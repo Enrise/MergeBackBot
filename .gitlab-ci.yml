@@ -10,7 +10,7 @@ stages:
 # Build container
 # ======================
 
-elasticsearch-proxy image:
+build merge-back-bot image:
     image: node:12.16-alpine
     stage: build
     interruptible: true
