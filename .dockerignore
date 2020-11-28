@@ -1,0 +1,7 @@
+# Ignore everything...
+*
+
+# ...but keep files/dirs:
+!/node_modules
+!/dist/
+!/package.json

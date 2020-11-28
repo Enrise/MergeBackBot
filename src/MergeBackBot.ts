@@ -1,8 +1,12 @@
+import log from './Logger';
+
 class MergeBackBot {
     constructor() {
-        console.log('============================================');
-        console.log('Merge Back Bot by enrise.com');
-        console.log('============================================');
+        const packageJson = require('../package.json');
+
+        log.separator();
+        log.line(`${log.blue('Merge Back Bot')} v${packageJson.version} by ${log.yellow('enrise.com')}`);
+        log.separator();
     }
 
     run() {
